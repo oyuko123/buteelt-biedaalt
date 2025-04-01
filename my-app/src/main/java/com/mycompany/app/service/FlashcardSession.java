@@ -59,14 +59,14 @@ public class FlashcardSession {
         }
         
         tracker.displayAchievements();
-        System.out.println("\nFlashcard programmiig ashiglasand bayarlalaa. Bayartai!");
+        System.out.println("\nFlashcard ended");
     }
 
     private void printWelcomeMessage() {
         System.out.println("=================================================");
-        System.out.println("Welcome to the Flashcard App!");
+        System.out.println("Flashcard app started");
         System.out.println("=================================================");
-        System.out.println("Let's set up your flashcard session first.");
+        System.out.println("Set your flashcard session");
     }
     
     private void configureSession() {
@@ -81,28 +81,28 @@ public class FlashcardSession {
         }
         
         System.out.println("\n=================================================");
-        System.out.println("Session configured! Let's begin.");
+        System.out.println("Set up done");
         System.out.println("Commands during the session:");
-        System.out.println("  'skip' - Skip the current question");
-        System.out.println("  'exit' - Exit the application");
+        System.out.println("  'skip' - to skip question");
+        System.out.println("  'exit' - to exit the app");
         System.out.println("=================================================\n");
     }
     
     private boolean promptForRestart() {
-        System.out.println("\nSaynii kartuudaa dahin ajillah uu? (yes/no)");
+        System.out.println("\nUmnuh session-d baisan kartuudaa dahin ajillah uu? (yes/no)");
         String restart = scanner.nextLine().trim().toLowerCase();
         return restart.equals("yes") || restart.equals("y");
     }
     
     private boolean promptForReconfiguration() {
-        System.out.println("Songoltuudiig dahin tohiruulah uu (repetitions, order, inversion)? (yes/no)");
+        System.out.println("Songoltuudiig ahin oruulah uu (repetitions, order, inversion)? (yes/no)");
         String reconfigure = scanner.nextLine().trim().toLowerCase();
         return reconfigure.equals("yes") || reconfigure.equals("y");
     }
     
     private int promptForRepetitions() {
         while (true) {
-            System.out.println("\nKart burt heden udaa zuw hariulah shaardlagatai ve? (1-10):");
+            System.out.println("\nCard heden udaa zuv hariulah shaardlagatai ve? (1-10):");
             String input = scanner.nextLine().trim();
             
             try {
@@ -110,10 +110,10 @@ public class FlashcardSession {
                 if (repetitions >= 1 && repetitions <= 10) {
                     return repetitions;
                 } else {
-                    System.out.println("1ees 10 iin hoorond too songon uu.");
+                    System.out.println("1-ees 10 iin hoorond songono uu");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Zuw too oruula uu!");
+                System.out.println("Too oruulna uu");
             }
         }
     }
@@ -121,7 +121,7 @@ public class FlashcardSession {
     private CardOrganizer promptForOrderType() {
         List<String> validOptions = Arrays.asList("random", "worst-first", "recent-mistakes-first");
         
-        System.out.println("\nKartuudiin garch ireh daraalliig songono uu:");
+        System.out.println("\nChoose the order of cards:");
         System.out.println("1. random - Kartuud sanamsargui daraallaar garch irne");
         System.out.println("2. worst-first - Hamgiin ih aldsan kartuud ehleed garch irne");
         System.out.println("3. recent-mistakes-first - Suuld aldsan kartuud ehleed garch irne");
@@ -142,7 +142,7 @@ public class FlashcardSession {
                 }
             }
             
-            System.out.println("1ees 3iin hoorond too songono uu");
+            System.out.println("1-ees 3-iin hoorond songono uu");
         }
     }
     
@@ -156,7 +156,7 @@ public class FlashcardSession {
             } else if (response.equals("n") || response.equals("no")) {
                 return false;
             } else {
-             System.out.println(" n(no) eswel y(yes) gesen solgolt hiih bolomjtoi");
+             System.out.println(" n(no) eswel y(yes) gej oruulna uu");
             }
         }
     }
@@ -234,7 +234,7 @@ public class FlashcardSession {
             tracker.unlockAchievement("CORRECT");
         }
         
-        System.out.println("\nBayrhurgey! Buh kartuudiig amjilttai duusgalaa");
+        System.out.println("\nKartuudad hariulj duuslaa");
     }
     
     private boolean processCard(Card card) {
