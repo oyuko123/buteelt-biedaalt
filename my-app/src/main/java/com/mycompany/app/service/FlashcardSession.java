@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 import com.mycompany.app.achievement.AchievementTracker;
+import com.mycompany.app.cli.HelpFormatter;
 import com.mycompany.app.model.Card;
 import com.mycompany.app.organizer.CardOrganizer;
 import com.mycompany.app.organizer.RandomSorter;
@@ -101,22 +102,25 @@ public class FlashcardSession {
     }
     
     private int promptForRepetitions() {
-        while (true) {
-            System.out.println("\nCard heden udaa zuv hariulah shaardlagatai ve? (1-10):");
-            String input = scanner.nextLine().trim();
-            
-            try {
-                int repetitions = Integer.parseInt(input);
-                if (repetitions >= 1 && repetitions <= 10) {
-                    return repetitions;
-                } else {
-                    System.out.println("1-ees 10 iin hoorond songono uu");
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Too oruulna uu");
+    while (true) {
+        System.out.println("\nKart burt heden udaa zuw hariulah shaardlagatai ve? (1-10, or 'help'):");
+        String input = scanner.nextLine().trim();
+        
+        if (input.equalsIgnoreCase("help")) {
+            HelpFormatter.displayHelp();
+            continue;
+        }
+        
+        try {
+            int repetitions = Integer.parseInt(input);
+            if (repetitions >= 1 && repetitions <= 10) {
+                return repetitions;
             }
+        } catch (NumberFormatException e) {
+            System.out.println("1ees 10 iin hoorond too eswel 'help' oruulna uu.");
         }
     }
+}
     
     private CardOrganizer promptForOrderType() {
         List<String> validOptions = Arrays.asList("random", "worst-first", "recent-mistakes-first");

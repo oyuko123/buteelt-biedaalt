@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\myagaa\AppData\Local\Temp\surefire8744154058953904824\surefirebooter-20250402030044042_3.jar C:\Users\myagaa\AppData\Local\Temp\surefire8744154058953904824 2025-04-02T03-00-43_920-jvmRun1 surefire-20250402030044042_1tmp surefire_0-20250402030044042_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\myagaa\AppData\Local\Temp\surefire10346005086861145539\surefirebooter-20250402042925130_3.jar C:\Users\myagaa\AppData\Local\Temp\surefire10346005086861145539 2025-04-02T04-29-25_016-jvmRun1 surefire-20250402042925130_1tmp surefire_0-20250402042925130_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\MVNTEST\my-app\target\test-classes;C:\MVNTEST\my-app\target\classes;C:\Users\myagaa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\myagaa\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\myagaa\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\myagaa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\myagaa\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\myagaa\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\myagaa\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\myagaa\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\myagaa\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\myagaa\AppData\Local\Temp\surefire8744154058953904824\surefirebooter-20250402030044042_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\myagaa\AppData\Local\Temp\surefire10346005086861145539\surefirebooter-20250402042925130_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -58,12 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testMultipleAchievements" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.034"/>
-  <testcase name="testAverageResponseTimeWithNoData" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.002"/>
-  <testcase name="testNoAchievements" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.002"/>
-  <testcase name="testTrackResponseTime" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.001"/>
+  <testcase name="testMultipleAchievements" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.033"/>
+  <testcase name="testAverageResponseTimeWithNoData" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0"/>
+  <testcase name="testNoAchievements" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.009"/>
+  <testcase name="testTrackResponseTime" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0"/>
   <testcase name="testInitialState" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0"/>
-  <testcase name="testDuplicateAchievements" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.001"/>
-  <testcase name="testUnlockAchievement" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.001"/>
-  <testcase name="testAverageResponseTimeRounding" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.001"/>
+  <testcase name="testDuplicateAchievements" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0.003"/>
+  <testcase name="testUnlockAchievement" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0"/>
+  <testcase name="testAverageResponseTimeRounding" classname="com.mycompany.app.achievement.AchievementTrackerTest" time="0"/>
 </testsuite>
