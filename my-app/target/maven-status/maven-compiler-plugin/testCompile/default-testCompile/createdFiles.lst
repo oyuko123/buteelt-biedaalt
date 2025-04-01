@@ -1,0 +1,6 @@
+com\mycompany\app\achievement\AchievementTrackerTest.class
+com\mycompany\app\service\CardLoaderTest.class
+com\mycompany\app\cli\CommandLineOptionsTest.class
+com\mycompany\app\FlashcardIntegrationTest.class
+com\mycompany\app\model\CardTest.class
+com\mycompany\app\organizer\CardOrganizerTest.class
